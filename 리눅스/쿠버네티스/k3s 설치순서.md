@@ -9,10 +9,12 @@
 
 #### 마스터 노드 존재
 NAME           STATUS   ROLES                  AGE    VERSION
+<br>
 raspberrypi1   Ready    control-plane,master   8m8s   v1.28.8+k3s1
 
 ## node-token 값 확인
 > sudo cat /var/lib/rancher/k3s/server/node-token
+<br>
 나온 내용 전부를 복사 
 
 ## 워크 노드 만들기
