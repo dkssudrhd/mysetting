@@ -1,6 +1,25 @@
-## k3s 설치 스크립트
-> curl -sfL https://get.k3s.io | sh -s - --docker
+## 준비
+> sudo apt-get update
+> sudo apt-get install -y curl
 
+*******
+
+## <b>도커 준비</b>
+
+## docker 설치
+> sudo apt install docker.io 
+
+## docker 서비스 시작
+> sudo systemctl start docker
+
+## 부팅시 docker 서비스 시작
+> sudo systemctl enable docker
+
+*******
+
+## k3s 설치 스크립트
+> curl -sfL https://get.k3s.io | sh -
+ 
 ## 설치 되어있는지 확인
 > sudo systemctl status k3s
 
@@ -21,3 +40,9 @@ raspberrypi1   Ready    control-plane,master   8m8s   v1.28.8+k3s1
 > curl -sfL http://get.k3s.io | K3S_URL=https://<service-ip>:6443 K3S_TOKEN=<token값> sh -s - --docker
 
 워크 노드에서 오류가 남....
+
+## 삭제관련
+> sudo /usr/local/bin/k3s-uninstall.sh
+
+## 남은파일 삭제
+> sudo rm -rf /etc/rancher/k3s /etc/systemd/system/k3s* /usr/local/bin/k3s*
