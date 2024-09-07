@@ -1,7 +1,21 @@
 
 ### 사용중인 포트 확인하는 명령어
 
-> sudo netstat -tuln
+```bash
+sudo netstat -tuln
+```
 
 ### 사용중인 램 확인
-> free -h
+
+```bash
+free -h
+```
+
+### 권한 변경
+
+```bash
+sudo usermod -aG <권한을 변경할 명령어> ${USER}
+groups ${user}
+```
+
+> reboot를 해야 적용이 된다.
