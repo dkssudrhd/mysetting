@@ -17,7 +17,7 @@
 >  sudo cat /etc/rancher/k3s/k3s.yaml
 
 ### 실행중인 node 보기 
-> sudo kubectl get node
+> sudo kubectl get node -o wide
 
 ### 클러스터 정보 보기
 > sudo kubectl cluster-info
