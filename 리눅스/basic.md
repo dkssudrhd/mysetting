@@ -19,3 +19,15 @@ groups ${user}
 ```
 
 > reboot를 해야 적용이 된다.
+
+
+### OS 버전 정보 확인
+
+```bash
+cat /etc/*release*
+```
+
+### clear 단축기
+
+> 컨트롤 + L
+
