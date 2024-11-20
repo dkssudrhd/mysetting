@@ -31,3 +31,10 @@ cat /etc/*release*
 
 > 컨트롤 + L
 
+
+### 새로운 유저 만들기
+```bash
+adduser ${USER_NAME}
+```
+
+> sodu 권한이 있어야 한다. 그리고 USER_NAME을 입력하고 그 이후에는 password를 입력한다.
