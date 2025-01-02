@@ -1,0 +1,18 @@
+### 도커는 항상 Root로 실행되기 때문에 sudo를사용하여 명령어를 입력해야 한다.
+
+1. 먼저 해당 사용자를 docker 그룹에 추가함으로 sudo  명령어를 사용하지 않고도 도커 명령어를 사용가능하다.
+```bash
+sudo usermod -aG docker [username]
+```
+
+2. 도커를 재시작 해준다.
+```bash
+sudo service docker restart
+```
+
+3. 유저 로그아웃 한 뒤 다시 로그인
+```bash
+exit
+```
+
+그러면 sudo 권한 없이 도커를 사용할 수 있다.
